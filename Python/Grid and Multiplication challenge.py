@@ -1,7 +1,7 @@
 import numpy
 test = print(''' ()_() \n'''+
              ''' {+_+}\n'''+
-             '''-{| |}-\n'''+
+             '''-{|_|}-\n'''+
              ''' d   b\n''')
 test
 '''create 3 arrays, one to hold temp items coming in, one to hold parent number

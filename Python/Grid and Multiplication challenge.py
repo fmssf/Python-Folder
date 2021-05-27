@@ -15,8 +15,7 @@ It reads in and turns the entries from strings to numbers'''
 tmp = lines[len(lines)-1].strip().split(' ')
 for i in tmp:
   child.append(int(i))
-print(lines[1])
-
+  print(i,end=",")
 
   # Walk through every row of the triangle except the last.  The last was prebuilt
 '''for i, row in tmp.iterrows():

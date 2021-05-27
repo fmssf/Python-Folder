@@ -1,4 +1,5 @@
 import numpy
+import pandas
 '''create 3 arrays, one to hold temp items coming in, one to hold parent number
 and one to hold child numbers.'''
 textFile = open("numbers.txt","r")
@@ -14,11 +15,14 @@ It reads in and turns the entries from strings to numbers'''
 tmp = lines[len(lines)-1].strip().split(' ')
 for i in tmp:
   child.append(int(i))
-print(child)
+print(lines[1])
 
 
   # Walk through every row of the triangle except the last.  The last was prebuilt
-
+'''for i, row in tmp.iterrows():
+  print(f"Index: {i}")
+  print(f"{row}\n")
+'''
 '''
 for ()  
             {

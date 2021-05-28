@@ -1,9 +1,5 @@
 import numpy
-test = print(''' ()_() \n'''+
-             ''' {+_+}\n'''+
-             '''-{|_|}-\n'''+
-             ''' d   b\n''')
-test
+
 '''create 3 arrays, one to hold temp items coming in, one to hold parent number
 and one to hold child numbers.'''
 textFile = open("numbers.txt","r")
@@ -12,7 +8,10 @@ lines = textFile.readlines()
 tmp = []
 parent = []
 child = []
-
+test = print('''  )_( \n'''+
+             ''' {+_+}\n'''+
+             '''-{| |}-\n'''+
+             ''' d|-|b''')
 '''
 The for loop below will compare the current row with the row above it.
 The following snipit of code will prepare row below before the loop starts.
@@ -23,12 +22,9 @@ for i in tmp:
 
   # Walk through every row of the triangle except the last.  The last was prebuilt
 #show the output
-
 for row in lines:
-    
-    child.append(int(row))
-
-print(child)
+  test
+  print(child)
  
   
 '''

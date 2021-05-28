@@ -1,5 +1,5 @@
 import numpy
-
+from img import *
 '''create 3 arrays, one to hold temp items coming in, one to hold parent number
 and one to hold child numbers.'''
 textFile = open("numbers.txt","r")
@@ -8,10 +8,11 @@ lines = textFile.readlines()
 tmp = []
 parent = []
 child = []
-test = print('''  )_( \n'''+
+test = print(
+             ''' ()_()\n'''+
              ''' {+_+}\n'''+
-             '''-{| |}-\n'''+
-             ''' d|-|b''')
+             '''-{|--|}-\n'''+
+             ''' d|--|b''')
 '''
 The for loop below will compare the current row with the row above it.
 The following snipit of code will prepare row below before the loop starts.

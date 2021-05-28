@@ -20,14 +20,19 @@ for i in tmp:
   # Walk through every row of the triangle except the last.  The last was prebuilt
 #show the output
 #print(len(tmp)-1)
-for row in range(14,0,-1):
+for row in range(13,0,-1):
     tmp = lines[row].strip().split(' ')
     parent.append(int(i))
     for j in range(0,len(tmp),1):
-        if child[j] > child[1]:
-            print(child[j] + child[j+1],end=",")
+        if child[j] > child[j+1]:
+          parent[j] = child[j] +parent[j]
         else:
-            print(child[j] + child[j-1],end=",")
+          child[j] = parent[j] +child[j]
+        child = len(parent);
+        parent.insert(child, 0);
+        print(child)
+        break;
+
         
     
             

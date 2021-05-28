@@ -1,5 +1,5 @@
 import numpy
-from img import *
+#from img import *
 '''create 3 arrays, one to hold temp items coming in, one to hold parent number
 and one to hold child numbers.'''
 textFile = open("numbers.txt","r")
@@ -19,11 +19,15 @@ for i in tmp:
 
   # Walk through every row of the triangle except the last.  The last was prebuilt
 #show the output
-for row in lines:
-  
-  print(child)
- 
-  
+#print(len(tmp)-1)
+for row in range(14,0,-1):
+  #print(tmp,end=",")
+  tmp = lines[row].strip().split(' ')
+  parent.append(int(i))
+  for j in range(0,len(tmp),1):
+      if child[j]> child[1]:
+          print(child[1])
+            
 '''
 for ()  
             {

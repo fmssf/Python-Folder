@@ -21,12 +21,15 @@ for i in tmp:
 #show the output
 #print(len(tmp)-1)
 for row in range(14,0,-1):
-  #print(tmp,end=",")
-  tmp = lines[row].strip().split(' ')
-  parent.append(int(i))
-  for j in range(0,len(tmp),1):
-      if child[j]> child[1]:
-          print(child[1])
+    tmp = lines[row].strip().split(' ')
+    parent.append(int(i))
+    for j in range(0,len(tmp),1):
+        if child[j] > child[1]:
+            print(child[j] + child[j+1],end=",")
+        else:
+            print(child[j] + child[j-1],end=",")
+        
+    
             
 '''
 for ()  

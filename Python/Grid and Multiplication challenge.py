@@ -44,7 +44,7 @@ for i in range(-2,0):
 '''
             {
                 # Grab the next row up the triangle as the parent
-               +
+               
 
 
                 # Walk through each item in the parent and add the largest adjacent item from the child

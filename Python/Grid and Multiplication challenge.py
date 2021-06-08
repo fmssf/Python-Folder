@@ -32,8 +32,9 @@ for i in range(-2,0):
       parent[j] += child[j]
     else:
       parent[j] += child[j+1]
-    childNums = int(len(tmp[i]));
-  print(copy.copy(child[0]))
+  child = [len(tmp)];
+  parent = copy.copy(child)
+  print(parent[0])
 
 '''
   Walk through every row of the triangle except the last. The last was prebuilt

@@ -1,10 +1,11 @@
 import random,time
 from num2words import *
 from img import *
+biggest = []
+for i in range(100,1000):
 
-while True:
-  num1 = random.randint(100,999)
-  output = num1 * num1
-  print(num1 , "*" ,num1 ,"=", output)
-  time.sleep(1)
-  
+  for j in range(i,1000):
+    output = i,"*",j, "=" ,j * i;
+    print(output)
+    break;
+  break;

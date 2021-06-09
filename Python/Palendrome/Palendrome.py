@@ -1,6 +1,10 @@
-import random
+import random,time
+from num2words import *
 from img import *
 
-num1 = int(random.randint(111,999))
-num2 = int(random.randint(111,999))
-print(num1, "*",num2 , "=" ,num1 * num2)
+while True:
+  num1 = random.randint(100,999)
+  output = num1 * num1
+  print(num1 , "*" ,num1 ,"=", output)
+  time.sleep(1)
+  

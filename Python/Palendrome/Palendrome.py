@@ -1,11 +1,17 @@
 import random,time
 from num2words import *
 from img import *
-biggest = []
+pallendrome = []
+notPallendrome = []
 for i in range(100,1000):
 
   for j in range(i,1000):
-    output = i,"*",j, "=" ,j * i;
-    print(output)
+    equales = print(i,'*',j, '=' , j * i)
+    result = str(j*i[::-1])
+    print(result)
     break;
-  break;
+    if i == j:
+      pallendrome.append(str(equales))
+    else:
+      notPallendrome.append(equales)
+      

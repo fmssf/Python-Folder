@@ -20,21 +20,22 @@ for i in tmp:
   child.append(int(i))
 
 ''' walk the throug the text file from the bottom up. start with the second line from the bottom.'''
-for i in range(-2,0):
+for i in range(len(lines)-2,0,1):
   
   #grabs a line and add it to the parent
   tmp = lines[i].strip().split(' ')
+  parent = []
   for j in tmp:
     parent.append(int(j))
-    
-  for j in range(0,len(child),-1):
+  print(parent,"\n",child)
+  for j in range(len(child)-1,0,-1):
     if child[j] > child[j+1]:
       parent[j] += child[j]
     else:
       parent[j] += child[j+1]
-  child = [len(tmp)];
-  parent = copy.copy(child)
-  print(parent[0])
+  child = []
+  child = parent.copy()
+print(parent[0])
 
 '''
   Walk through every row of the triangle except the last. The last was prebuilt
